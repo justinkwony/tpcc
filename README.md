@@ -1,12 +1,9 @@
-Java TPC-C
-==========
+# Java TPC-C
 
 This project is a Java implementation of the TPC-C benchmark.\
 Change Maven project to Gradle project.
 
-=========\
-Compiling\
-=========
+## Compiling
 
 Use this command to compile the code and produce a fat jar.
 
@@ -14,9 +11,7 @@ Use this command to compile the code and produce a fat jar.
 gradlew build
 ```
 
-========\
-Database\
-========
+## Database
 
 To create the tpcc schema in MySQL:
 
@@ -32,9 +27,7 @@ mysql -u root
 It is possible to load data without the foreign keys and indexes in place and then add those
 after loading data to improve loading times.
 
-=================================\
-Generating and loading TPC-C data\
-=================================
+## Generating and loading TPC-C data
 
 Data can be loaded directly into a MySQL instance and can also be generated to CSV files that
 can be loaded into MySQL later using LOAD DATA INFILE.
@@ -53,9 +46,7 @@ SHARDCOUNT and SHARDID properties must be set correctly when generating or loadi
 This option requires the use of a JDBC driver that supports automatic sharding, such as
 dbShards (http://www.dbshards.com).
 
-===========================\
-Running the TPC-C Benchmark\
-===========================
+## Running the TPC-C Benchmark
 
 Review the TPC-C settings in `tpcc.properties`, then run this command To run the tpcc benchmarks:
 
